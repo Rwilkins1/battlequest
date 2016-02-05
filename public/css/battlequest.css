@@ -1,0 +1,36 @@
+.uppernavbar {
+	background-color: #444;
+}
+#nameform {
+	margin-top: 30%;
+	opacity: 0;
+}
+.dungeonspike {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid #444;
+}
+.dungeon {
+	margin-right: -10000px;
+}
+.dungeonbody {
+	background-color: black;
+}
+.dungeonfloor {
+	display: inline-block;
+	/*margin-top: 5.1%;*/
+	width: 200px;
+	height: 33px;
+	background: #444;
+}
+.dungeondoor {
+	display: inline-block;
+	background-color: #444;
+	width: 100px;
+	height: 200px;
+	margin-top: 3.3%;
+	margin-left: 98.8%;
+}

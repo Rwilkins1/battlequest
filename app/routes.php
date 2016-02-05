@@ -11,7 +11,12 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get('/', 'HomeController@name');
+
+Route::post('/', 'HomeController@setname');
+
+Route::get('/start', 'HomeController@title');
+
+Route::post('/start', 'HomeController@startgame');
+
+Route::get('/dungeon', 'HomeController@dungeon');

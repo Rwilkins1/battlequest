@@ -15,9 +15,43 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showWelcome()
+	public function name()
 	{
-		return View::make('hello');
+		return View::make('name');
 	}
 
+	public function setname()
+	{
+		$name = Input::get('name');
+		if($name != null && $name != '') {
+			Session::put('name', $name);
+			return Redirect::action('HomeController@title');
+		} else {
+			return Redirect::back();
+		}
+	}
+
+	public function title()
+	{
+		if(Session::has('name')) {
+			return View::make('title');
+		} else {
+			return Redirect::back();
+		}
+	}
+	public function startgame()
+	{
+		if(Session::has('name')) {
+			return Redirect::action('HomeController@dungeon');
+		} else {
+			return Redirect::back();
+		}
+	}
+	public function dungeon()
+	{
+		if(Session::has('name')) {
+			$health = 100;
+			return View::make('dungeon')->with('health', $health);
+		}
+	}
 }
