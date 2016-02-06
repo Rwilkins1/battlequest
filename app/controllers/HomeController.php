@@ -54,4 +54,9 @@ class HomeController extends BaseController {
 			return View::make('dungeon')->with('health', $health);
 		}
 	}
+	public function restart()
+	{
+		Session::forget('name');
+		return Redirect::action('HomeController@name');
+	}
 }

@@ -18,6 +18,7 @@
 }
 .dungeonbody {
 	background-color: black;
+	overflow: hidden;
 }
 .dungeonfloor {
 	display: inline-block;
@@ -31,6 +32,39 @@
 	background-color: #444;
 	width: 100px;
 	height: 200px;
-	margin-top: 3.3%;
-	margin-left: 98.8%;
+	margin-top: 3%;
+	margin-bottom: -1.1%;
+	margin-left: 98.7%;
+}
+.information {
+	display: inline-block;
+	position: fixed;
+	height: 80px;
+	width: 200px;
+	background-color: #444;
+}
+.health {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+.healthbar {
+	color: white;
+}
+.restartbutton {
+	background-color: #DDD;
+	color: black;
+	padding-right: 38%;
+	padding-left: 38%;
+
+}
+.scroller {
+	display: none;
+}
+.wizard {
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 100px;
+	margin-left: 100px;
+
 }
