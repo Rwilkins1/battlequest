@@ -59,4 +59,18 @@ class HomeController extends BaseController {
 		Session::forget('name');
 		return Redirect::action('HomeController@name');
 	}
+	public function exitdungeon()
+	{
+		if(Session::has('name')) {
+			return Redirect::action('HomeController@forest');
+		} else {
+			return Redirect::back();
+		}
+	}
+	public function forest()
+	{
+		if(Session::has('name')) {
+			return View::make('forest');
+		}
+	}
 }

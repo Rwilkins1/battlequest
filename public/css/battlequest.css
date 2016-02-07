@@ -36,10 +36,86 @@
 	margin-bottom: -1.1%;
 	margin-left: 98.7%;
 }
+.forest {
+	margin-right: -10000px;
+	background-color: rgb(220,127,127);;
+}
+.forestbody {
+	background-color: rgb(220,127,127);;
+}
+.grassfield {
+	background-color: green;
+}
+.grass {
+	display: inline-block;
+	background-color: green;
+	width: 200px;
+	height: 33px;
+}
+.tree-level {
+	margin-bottom: -.1%;
+
+}
+.tree {
+	z-index: 1;
+	position: relative;
+	margin-left: 10%;
+	display: inline-block;
+	height: 625px;
+	width: 100px;
+	background-color: brown;
+}
+.sun-top {
+	position: fixed;
+	z-index: 0;
+	margin-bottom: -2.6%;
+	margin-left: 40%;
+	margin-top: 10%;
+	/* border-radius: 150px 150px 0 0;
+     -moz-border-radius: 150px 150px 0 0;
+     -webkit-border-radius: 150px 150px 0 0;*/
+	border-radius: 100%;
+	height: 340px;
+	width: 340px;
+	background-color: orange;
+}
+.sun-bottom {
+	background-color: yellow;
+	margin-bottom: -2.6%;
+	margin-left: 21.3%;
+	margin-top: 20%;
+	z-index: 0;
+	/* border-radius: 150px 150px 0 0;
+     -moz-border-radius: 150px 150px 0 0;
+     -webkit-border-radius: 150px 150px 0 0;*/
+     border-radius: 100%;
+    height: 200px;
+    width: 200px;
+
+}
+.mountain {
+	z-index: 0;
+	margin-left: -23%;
+	margin-top: -78%;
+	height: 100px;
+	width: 100px;
+	border-left: 250px solid transparent;
+	border-right: 250px solid transparent;
+	border-bottom: 500px solid green;
+}
+.squirrelhole {
+	position: relative;
+	border-radius: 100%;
+	background-color: black;
+	height: 50px;
+	width: 50px;
+	margin-top: 300px;
+	margin-left: 24px;
+}
 .information {
 	display: inline-block;
 	position: fixed;
-	height: 80px;
+	height: 100px;
 	width: 200px;
 	background-color: #444;
 }
@@ -67,4 +143,14 @@
 	height: 100px;
 	margin-left: 100px;
 
+}
+.hammerhead {
+	width: 100px;
+	height: 130px;
+}
+.fireball {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	opacity: 0;
 }

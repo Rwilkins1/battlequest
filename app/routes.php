@@ -21,4 +21,8 @@ Route::post('/start', 'HomeController@startgame');
 
 Route::get('/dungeon', 'HomeController@dungeon');
 
+Route::post('/dungeon', 'HomeController@exitdungeon');
+
+Route::get('/forest', 'HomeController@forest');
+
 Route::get('/restart', 'HomeController@restart');
