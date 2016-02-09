@@ -73,4 +73,26 @@ class HomeController extends BaseController {
 			return View::make('forest');
 		}
 	}
+	public function exitforest()
+	{
+		if(Session::has('name')) {
+			return Redirect::action('HomeController@deepforest');
+		} else {
+			return Redirect::back();
+		}
+	}
+	public function deepforest()
+	{
+		if(Session::has('name')) {
+			return View::make('deepforest');
+		} else {
+			return Redirect::back();
+		}
+	}
+	public function lavalands()
+	{
+		if(Session::has('name')) {
+			return View::make('lavalands');
+		}
+	}
 }

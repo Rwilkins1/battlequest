@@ -36,6 +36,14 @@
 	margin-bottom: -1.1%;
 	margin-left: 98.7%;
 }
+.forestdoor {
+	display: inline-block;
+	background-color: #444;
+	width: 100px;
+	height: 200px;
+	margin-left: 98.7%;
+	margin-bottom: -.95%;
+}
 .forest {
 	margin-right: -10000px;
 	background-color: rgb(220,127,127);;
@@ -53,8 +61,11 @@
 	height: 33px;
 }
 .tree-level {
-	margin-bottom: -.1%;
+	margin-bottom: -1.85%;
 
+}
+.deeptree-level {
+	margin-bottom: -1%;
 }
 .tree {
 	z-index: 1;
@@ -112,8 +123,63 @@
 	margin-top: 300px;
 	margin-left: 24px;
 }
+.forestinfo {
+	margin-top: 4%;
+	z-index: 1;
+}
+
+
+.deepforestbody {
+	background-color: #003300;
+	margin-right: -10000px;
+}
+
+.lavalandsbody {
+	margin-right: -10000px;
+}
+.toplavasky {
+	display: inline-block;
+	background-color: yellow;
+	background: -webkit-linear-gradient(yellow, orange); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(yellow, orange); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(yellow, orange); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(yellow, orange); /* Standard syntax */
+	height: 150px;
+	width: 11500px;
+	margin-left: -1%;
+}
+.middlelavasky {
+	background-color: orange;
+	background: -webkit-linear-gradient(orange, red); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(orange, red); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(orange, red); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(orange, red); /* Standard syntax */
+	height: 230px;
+	width: 11500px;
+	margin-left: -1%;
+	margin-top: -.1%;
+}
+.bottomlavasky {
+	background-color: red;
+	height: 245px;
+	width: 11500px;
+	margin-left: -1%;
+}
+.ground {
+	background-color: brown;
+	margin-left: -1%;
+	margin-right: -1.26%;
+	border: 1px solid black;
+}
+.groundpanel {
+	display: inline-block;
+	width: 200px;
+	height: 33px;
+	background-color: brown;
+}
 .information {
 	display: inline-block;
+	z-index: 1;
 	position: fixed;
 	height: 100px;
 	width: 200px;
@@ -138,6 +204,7 @@
 }
 .wizard {
 	position: relative;
+	z-index: 1;
 	display: inline-block;
 	width: 50px;
 	height: 100px;
@@ -150,6 +217,7 @@
 }
 .fireball {
 	position: relative;
+	z-index: 1;
 	width: 50px;
 	height: 50px;
 	opacity: 0;

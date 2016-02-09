@@ -10,6 +10,7 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
+Route::get('/restart', 'HomeController@restart');
 
 Route::get('/', 'HomeController@name');
 
@@ -25,4 +26,10 @@ Route::post('/dungeon', 'HomeController@exitdungeon');
 
 Route::get('/forest', 'HomeController@forest');
 
-Route::get('/restart', 'HomeController@restart');
+Route::post('/forest', 'HomeController@exitforest');
+
+Route::get('/deepforest', 'HomeController@deepforest');
+
+Route::get('/lavalands', 'HomeController@lavalands');
+
+
